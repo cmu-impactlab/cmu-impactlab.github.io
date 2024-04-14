@@ -1,0 +1,35 @@
+- name: SIGCHI Ph.D. Dissertation Award
+  people: [ahuja]
+  
+- name: Gaetano Boriello Ph.D. Award Finalist
+  people: [adhikary]
+
+- name: Snapchat Ph.D. Fellowship 
+  people: [chikersal,arakawa]
+
+- name: Masason Foundation Scholarship
+  people: [arakawa]     
+
+- name: Heidelberg Laureate Forum Young Researcher
+  people: [ahuja]     
+
+- name: Google Faculty Research Award
+  people: [goel]
+  
+- name: Siebel Scholarship
+  people: [ahuja]
+
+- name: Microsoft Research Dissertation Grant
+  people: [ramos]
+
+- name: Google Ph.D. Fellowship
+  people: [bedri]
+
+- name: Center for Machine Learning and Health Fellowship
+  people: [chikersal,ramos,arakawa]
+
+- name: Qualcomm Innovation Fellowship
+  people: [bedri]
+
+- name: SCS Presidential Fellowship
+  people: [khurana,bedri]

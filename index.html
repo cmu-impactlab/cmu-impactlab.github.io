@@ -1,0 +1,106 @@
+---
+layout: default
+
+---
+
+{% assign sorted_members = site.data.members | sort: 'id' %}
+{% assign current_members = sorted_members | where:"status","current" %}
+{% assign visiting = sorted_members | where:"status","visiting" %}
+{% assign alumni = sorted_members | where:"status","alumni" %}
+{% assign master_alumni = sorted_members | where:"status","master_alumni" %}
+{% assign ugrad_alumni = sorted_members | where:"status","ugrad_alumni" %}
+{% assign faculty = sorted_members | where:"status","shifu" %}
+{% assign goel = faculty | first %}
+
+<div class="row">
+  <div class="col-sm-12">
+    <h3>
+Welcome to the IMPACTLAB, the Interdisciplinary Methods for Applied
+Cyber-physical Technologies in Society Lab, where technology meets societal
+needs. At IMPACTLAB, we're dedicated to harnessing the power of cyber-physical
+systems to address and solve real-world challenges that impact our communities.
+<br/>
+
+Our lab is a vibrant hub of innovation and collaboration, where
+interdisciplinary teams of researchers, students, and industry experts come
+together to develop groundbreaking solutions. We focus on creating systems that
+are not only technologically advanced but also socially responsive and
+sustainable.
+
+<br/>
+
+We believe in the transformative power of technology to improve lives. Our
+projects range from developing smart systems for clearning and inspection in
+large-scale solar plants, to creating assistive technology to improve daily life
+for individuals with disabilities, ensuring everyone can benefit from
+technological advancements.
+
+Join us as we explore the potential of cyber-physical systems to create a
+smarter, safer, and more connected world.
+    </h3>
+
+    <h3>
+    	I am always looking to work with great students. If you are interested in contributing to research in our lab, fill this <a href="https://forms.gle/xxx" target="_blank"> form</a> out.
+    </h3>
+
+  </div>
+
+</div>
+
+<h1>HIGHLIGHTS</h1>
+
+{% assign sorted_pubs = site.publications | sort: 'date'%}
+<div class="row">
+
+{% for pub in sorted_pubs reversed%}
+{% if pub.onhomepage==true %}
+<!-- {{pub.name}} -->
+    <div class="project-badge col-md-4 col-sm-4 col-xs-4">
+      <div class="image">
+        <img src="{{pub.image}}"/>
+        {% if pub.date > site.time %}
+        <div class = "coming_soon_overlay">
+          <div class = "coming_soon_text">Coming Soon!</div>
+          {% endif %}
+
+{% if pub.date > site.time %}
+</div>
+  {% endif %}
+  <div class="overlay">
+          {% if pub.date < site.time %}
+          <a href="{{ pub.url }}">
+            {% endif %}
+
+    <div class="pitch">
+    {{Text}}
+    {% if pub.blurb %}
+    {{pub.blurb}}
+    {% else %}
+    {{pub.title}}
+    {% endif %}
+  </div></a>
+  </div>
+      </div>
+      <div class="details">
+      <div class="name">{{pub.name}}</div>
+      </div>
+    </div>
+      {% endif %}
+{% endfor %}
+
+
+
+
+<script>
+$(document).ready(function(){
+
+  $('.bxslider').bxSlider({
+    adaptiveHeight: false,
+    speed: 500,
+    captions: true,
+    auto: true,
+    pause: 5000,
+    autoControls: true
+    });
+});
+</script>

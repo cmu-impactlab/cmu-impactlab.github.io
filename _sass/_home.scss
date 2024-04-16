@@ -1,0 +1,112 @@
+.bx-wrapper img {
+  width: 100%;
+}
+
+
+@media (min-width: $screen-md-min){
+.project-badge.col-md-2:nth-child(4n+1) {
+    clear: both;
+}
+}
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+.project-badge.col-sm-3:nth-child(4n+1) {
+    clear: both;
+}
+}
+@media (max-width: $screen-xs-max){
+.project-badge.col-xs-4:nth-child(3n+1) {
+    clear: both;
+}
+}
+
+.project-badge {
+  display: block;
+  margin-bottom: 40px;
+  text-align: center;
+  .image {
+    img {
+      width: 15em;
+      height: 15em;
+      object-fit: contain;
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      background-color:#ffffff;
+
+    }
+  }
+  
+  .coming_soon_overlay {
+  position: absolute;
+  top:0;
+  botttom:0;
+  left:22px;
+  right:0;
+  height:20%;
+  width:85%;
+  background-color: rgb(191,0,0);
+  }
+  .coming_soon_text {
+  color: white;
+  font-size: 1.5rem;
+  margin-top:13px;
+  display: block;
+  }
+  .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 92%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(255,255,255,0.9);
+  &:hover{
+  opacity: 1;
+  }
+}
+
+.pointer-events-none {
+pointer-events: none;
+}
+
+.pitch {
+  color: black;
+  font-size: 14px;
+  font-weight:lighter;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity:1!important;
+}
+  
+  .details {
+    font-size: 11pt;
+    word-break: break-word;
+    .name {
+      font-size: 14pt;
+      font-weight: lighter;
+      text-transform:uppercase;
+      letter-spacing: 3px;
+      display: block;
+    }
+    
+  
+  }
+
+  a {
+    color: $darkGray;
+    text-decoration: none;
+    &:hover {
+      color: #666;
+    }
+  }
+  
+  
+}

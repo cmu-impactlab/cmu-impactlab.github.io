@@ -17,6 +17,8 @@ future: true
 collections:
   publications:
     output: true
+  projects:
+    output: true
 
 defaults:
   - scope:
@@ -24,6 +26,11 @@ defaults:
       type: publications
     values:
       layout: publication
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
 
 #
 # Flags below are optional

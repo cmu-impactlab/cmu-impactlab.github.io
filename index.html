@@ -50,10 +50,8 @@ smarter, safer, and more connected world.
 </div>
 
 <h1>HIGHLIGHTS</h1>
-<div class = "coming_soon_overlay">
-  <div class = "coming_soon_text">Coming Soon!</div>
-</div>
-{% assign sorted_pubs = site.publications | sort: 'date'%}
+
+{% assign sorted_pubs = site.projects | sort: 'date'%}
 <div class="row">
 
 {% for pub in sorted_pubs reversed%}

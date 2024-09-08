@@ -7,3 +7,12 @@
   email: efeoflus@andrew.cmu.edu
   status: faculty
   affiliation: Assistant Teaching Professor of Computer Science at Carnegie Mellon University in Qatar
+
+# Anurag
+- id: aaryal
+  name: Anurag Aryal
+  image: /images/members/aaryal.jpg
+  email: aaryal@andrew.cmu.edu
+  status: current
+  degree: Undergraduate
+  affiliation: QSCS

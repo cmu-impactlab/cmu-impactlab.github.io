@@ -16,3 +16,40 @@
   status: current
   degree: Undergraduate
   affiliation: QSCS
+
+# Tram
+- id: tntran
+  name: Tram Tran
+  image: /images/members/dummy.png
+  email: tntran@andrew.cmu.edu
+  status: current
+  degree: Undergraduate
+  affiliation: QSCS
+
+# Ghani
+- id: graissov
+  name: Ghani Raissov
+  image: /images/members/dummy.png
+  email: graissov@andrew.cmu.edu
+  status: current
+  degree: Undergraduate
+  affiliation: QSCS
+
+# Yaqoob
+- id: yansari
+  name: Yaqoob Ansari
+  image: /images/members/dummy.png
+  email: yansari@andrew.cmu.edu
+  status: current
+  degree: Research Associate
+  affiliation: QSCS
+
+
+# Yusuf
+- id: ma1
+  name: Yusuf Ansari
+  image: /images/members/dummy.png
+  email: ma1@alumni.cmu.edu
+  status: current
+  degree: Ph.D candidate
+  affiliation: TAMU

@@ -13,4 +13,5 @@ thumbnail: /images/projects/hybrush_thumb.png
 title: 'HyBrush: A Hybrid UAV Brushing System for PV monitoring and cleaning (QNRF - UREP)'
 year: '2023'
 date: '2023-03-01'
+status: past
 ---

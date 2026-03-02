@@ -13,4 +13,5 @@ thumbnail: /images/projects/ershad_thumb.png
 title: 'e-Rshad: Enabling Inclusive Indoor Navigation for Individuals with Visual Impairments (CMUQ - Seed)'
 year: '2024'
 date: '2024-04-01'
+status: current
 ---

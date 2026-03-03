@@ -7,13 +7,11 @@ authors:
 
 image: /images/projects/lightweight_seg_kidney.png
 name: 'Lightweight Image Segmentation of Ultrasound Kidney Images'
-onhomepage: true
+onhomepage: false
 thumbnail: /images/projects/lightweight_seg_kidney.png
 title: 'Lightweight Image Segmentation of Ultrasound Kidney Images (CMUQ-QSIRUP)'
 year: '2024'
 date: '2024-06-01'
-status: current
+status: past
 pubs:
-  - ECG Transformer/LLM Survey
-  - Task Offloading in Edge Healthcare
 ---

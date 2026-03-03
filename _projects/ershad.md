@@ -4,6 +4,10 @@ This project aims to develop e-Rshad, a conversational and adaptive navigation s
 '
 authors:
 - Eduardo Feo Flushing (LPI)
+- kharras
+- mai
+- yansari
+- gramalho
 
 
 image: /images/projects/ershad.png
@@ -18,4 +22,5 @@ pubs:
   - Deployable Thermal Navigation
   - Text2Map
   - Tesseract
+  - graphwalker
 ---

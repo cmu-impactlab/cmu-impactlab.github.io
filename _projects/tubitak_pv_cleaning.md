@@ -4,12 +4,14 @@ authors:
 - Eduardo Feo Flushing (LPI)
 - HBKU/QEERI and consortium partners
 image: /images/projects/tubitak_pv_cleaning.png
-name: TUBITAK-QNRF PV Cleaning
-onhomepage: false
+name: TUBITAK-PV
+onhomepage: true
 thumbnail: /images/projects/tubitak_pv_cleaning_thumb.png
 title: 'Autonomous PV Cleaning and Inspection System for Hot Desert Weather Conditions (TUBITAK-QNRF)'
 year: '2021'
 date: '2021-08-23'
-status: past
-pdf: /projects/QNRF-TUBITAK%20PROPOSAL-PV%20Cleaning_V2.63.pdf
+status: current
+pubs:
+  - PV Feature Evaluation
+  - Thermal Homography PV
 ---

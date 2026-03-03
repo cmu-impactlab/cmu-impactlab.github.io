@@ -8,7 +8,7 @@ authors:
 
 image: /images/projects/hybrush.png
 name: HyBrush
-onhomepage: true
+onhomepage: false
 thumbnail: /images/projects/hybrush_thumb.png
 title: 'HyBrush: A Hybrid UAV Brushing System for PV monitoring and cleaning (QNRF - UREP)'
 year: '2023'

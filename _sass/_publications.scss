@@ -102,12 +102,23 @@ code {
     display: block;
   }
   .image-holder {
-    
+    max-width: 520px;
+    margin: 0 auto;
     img {
-      max-height: inherit;
+      width: 100%;
+      height: auto;
+      max-height: 360px;
+      object-fit: contain;
     }
   }
   .video-holder {
+    max-width: 520px;
+    margin: 0 auto;
+    iframe,
+    video {
+      width: 100%;
+      max-height: 360px;
+    }
   }
 }
 h2 {

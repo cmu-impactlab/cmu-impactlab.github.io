@@ -63,3 +63,22 @@
   status: current
   degree: Postdoctoral Fellow, Computer Science
   affiliation: QSCS
+
+# Maimoonah
+- id: mai
+  name: Mai Al-Mashhadani
+  image: /images/members/mai.jpeg
+  email: maimoonm@andrew.cmu.edu
+  status: current
+  degree: Research Associate, Computer Science
+  affiliation: QSCS
+
+# Khaled
+- id: kharras
+  name: Khaled Harras
+  image: /images/members/kharras.jpg
+  email: kharras@andrew.cmu.edu
+  status: collab
+  degree: Faculty, Computer Science
+  affiliation: QSCS
+  website: https://scholars.cmu.edu/2712-khaled-harras

@@ -24,5 +24,5 @@ bibtex: |
     doi={10.1145/3748636.3762771}
   }
 blurb: 'From low-semantic floor plans to navigable graph representations.'
-onhomepage: false
+onhomepage: true
 ---

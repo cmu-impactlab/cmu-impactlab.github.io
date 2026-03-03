@@ -2,30 +2,69 @@
   width: 100%;
 }
 
+.highlights-grid {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 24px 16px;
+}
 
-@media (min-width: $screen-md-min){
-.project-badge.col-md-2:nth-child(4n+1) {
-    clear: both;
+@media (min-width: $screen-sm-min) {
+  .highlights-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-auto-flow: row;
+    grid-auto-columns: auto;
+  }
 }
+
+@media (min-width: $screen-lg-min) {
+  .highlights-grid {
+    grid-template-columns: none !important;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(0, 1fr);
+    column-gap: 40px;
+  }
+
+  .highlights-grid > .project-badge {
+    align-items: center;
+  }
+
+  .highlights-grid > .project-badge .image {
+    width: min(100%, 15em);
+    margin: 0 auto;
+  }
+
+  .highlights-grid > .project-badge .details {
+    display: grid;
+    place-items: center;
+    text-align: center;
+  }
+
+  .highlights-grid > .project-badge .details .name {
+    width: min(100%, 20ch);
+    text-align: center;
+    margin-inline: auto;
+  }
 }
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
-.project-badge.col-sm-3:nth-child(4n+1) {
-    clear: both;
-}
-}
-@media (max-width: $screen-xs-max){
-.project-badge.col-xs-4:nth-child(3n+1) {
-    clear: both;
-}
+
+.highlights-grid > .project-badge {
+  float: none !important;
+  width: auto !important;
+  max-width: none !important;
 }
 
 .project-badge {
-  display: block;
-  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8px;
   text-align: center;
   .image {
+    position: relative;
+    width: 100%;
+    max-width: 15em;
+    margin: 0 auto;
     img {
-      width: 15em;
+      width: 100%;
       height: 15em;
       display: block;
       margin: 0 auto;
@@ -42,11 +81,11 @@
   .coming_soon_overlay {
   position: absolute;
   top:0;
-  botttom:0;
-  left:22px;
+  bottom:0;
+  left:0;
   right:0;
   height:20%;
-  width:85%;
+  width:100%;
   background-color: rgb(191,0,0);
   }
   .coming_soon_text {
@@ -61,7 +100,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 92%;
+  height: 100%;
   width: 100%;
   opacity: 0;
   transition: .5s ease;
@@ -92,12 +131,23 @@ pointer-events: none;
   .details {
     font-size: 11pt;
     word-break: break-word;
+    min-height: 3.6em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     .name {
       font-size: 14pt;
       font-weight: lighter;
       text-transform:uppercase;
       letter-spacing: 3px;
       display: block;
+      line-height: 1.3;
+      width: min(100%, 20ch);
+      margin: 0 auto;
+      text-align: center;
+      overflow-wrap: anywhere;
     }
     
   

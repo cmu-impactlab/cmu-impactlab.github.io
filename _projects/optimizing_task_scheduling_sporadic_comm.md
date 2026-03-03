@@ -7,10 +7,13 @@ authors:
 
 image: /images/projects/multi_robot_planning_soft_conn.webp
 name: 'Optimizing Multi-Robot Task Planning with Sporadic Communication in Large-Area Missions'
-onhomepage: true
+onhomepage: false
 thumbnail: /images/projects/multi_robot_planning_soft_conn.webp
 title: 'Optimizing Multi-Robot Task Planning with Sporadic Communication in Large-Area Missions (CMUQ-QSIURP)'
 year: '2024'
 date: '2024-06-01'
 status: past
+pubs:
+  - CoLoSSI
+  - Spatially-Distributed Missions
 ---

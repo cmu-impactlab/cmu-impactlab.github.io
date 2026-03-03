@@ -14,4 +14,7 @@ title: 'HyBrush: A Hybrid UAV Brushing System for PV monitoring and cleaning (QN
 year: '2023'
 date: '2023-03-01'
 status: past
+pubs:
+  - PV Feature Evaluation
+  - Thermal Homography PV
 ---

@@ -14,4 +14,8 @@ title: 'e-Rshad: Enabling Inclusive Indoor Navigation for Individuals with Visua
 year: '2024'
 date: '2024-04-01'
 status: current
+pubs:
+  - Deployable Thermal Navigation
+  - Text2Map
+  - Tesseract
 ---

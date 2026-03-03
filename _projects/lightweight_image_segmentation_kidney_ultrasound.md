@@ -13,4 +13,7 @@ title: 'Lightweight Image Segmentation of Ultrasound Kidney Images (CMUQ-QSIRUP)
 year: '2024'
 date: '2024-06-01'
 status: current
+pubs:
+  - ECG Transformer/LLM Survey
+  - Task Offloading in Edge Healthcare
 ---

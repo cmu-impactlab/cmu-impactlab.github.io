@@ -12,6 +12,7 @@ year: '2021'
 date: '2021-08-23'
 status: current
 pubs:
+  - AI Robotics for PV Inspection
   - PV Feature Evaluation
   - Thermal Homography PV
 ---

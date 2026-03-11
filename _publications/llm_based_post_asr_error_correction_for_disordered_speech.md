@@ -8,7 +8,7 @@ authors:
 conference: 'IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2026'
 date: '2026-05-04'
 year: '2026'
-name: 'PostASR'
+name: 'Post-ASR'
 pdf: '/pdfs/LLM-Based%20Post-ASR%20Error%20Correction%20for%20Disordered%20Speech.pdf'
 thumbnail: '/images/pubs/postasr.png'
 image: '/images/pubs/postasr.png'

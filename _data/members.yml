@@ -82,3 +82,12 @@
   degree: Faculty, Computer Science
   affiliation: QSCS
   website: https://scholars.cmu.edu/2712-khaled-harras
+
+# Yaser
+- id: yaljamal
+  name: Yaser Aljamal
+  image: /images/members/yaljamal.jpg
+  email: yaljamal@andrew.cmu.edu
+  status: current
+  degree: Undergraduate
+  affiliation: QSCS

@@ -23,4 +23,5 @@ bibtex: |
   }
 blurb: 'A structured LLM framework for inferring indoor topology graphs from human navigational language for edge deployment.'
 onhomepage: true
+highlight_badge: 'new paper!'
 ---

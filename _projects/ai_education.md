@@ -15,10 +15,11 @@ authors:
 image: /images/projects/evolved.png
 name: EvolvED
 onhomepage: true
+highlight_badge: 'new project!'
 thumbnail: /images/projects/evolved_thumb.png
-title: 'Towards Adaptive and Self-Improving Educational Systems'
-year: '2025'
-date: '2025-05-01'
+title: 'Towards Adaptive and Self-Improving Educational Systems (CMUQ-SURA)'
+year: '2026'
+date: '2026-05-12'
 status: current
 pubs:
 ---

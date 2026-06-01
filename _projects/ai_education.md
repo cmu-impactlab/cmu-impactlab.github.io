@@ -10,6 +10,7 @@ This project is in collaboration with LearnPack (https://learnpack.co/)
 '
 authors:
 - Eduardo Feo Flushing (LPI)
+- yaljamal
 
 image: /images/projects/evolved.png
 name: EvolvED

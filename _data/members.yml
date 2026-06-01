@@ -82,3 +82,12 @@
   degree: Faculty, Computer Science
   affiliation: QSCS
   website: https://scholars.cmu.edu/2712-khaled-harras
+
+# Abdulrahman
+- id: ataweel
+  name: Abdulrahman Al-Taweel
+  image: /images/members/ataweel.jpg
+  email: ataweel@andrew.cmu.edu
+  status: current
+  degree: Undergraduate
+  affiliation: QSCS

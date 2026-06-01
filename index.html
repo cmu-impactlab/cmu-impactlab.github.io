@@ -57,6 +57,9 @@ technological advancements.</p>
       <div class="image">
         {% assign highlight_image = pub.image | default: pub.thumbnail %}
         <img src="{{highlight_image}}"/>
+        {% if pub.highlight_badge %}
+        <div class="highlight_badge">{{ pub.highlight_badge }}</div>
+        {% endif %}
         {% if pub.date > site.time %}
         <div class="coming_soon_overlay">
           <div class="coming_soon_text">Coming Soon!</div>

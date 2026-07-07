@@ -97,12 +97,3 @@
   status: current
   degree: Undergraduate
   affiliation: QSCS
-
-# Saoud
-- id: saoude
-  name: Saoud Al-Emadi
-  image: /images/members/saoude.jpg
-  email: saoude@andrew.cmu.edu
-  status: current
-  degree: Undergraduate
-  affiliation: QSCS

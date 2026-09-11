@@ -15,4 +15,5 @@ pubs:
   - AI Robotics for PV Inspection
   - PV Feature Evaluation
   - Thermal Homography PV
+  - THED-PV Benchmark
 ---

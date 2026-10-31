@@ -33,7 +33,8 @@ Three Jekyll collections plus one data file drive nearly all content:
 
 - **`_data/members.yml`** — the single source of truth for every lab member (faculty, current
   students, alumni, collaborators). Each entry has an `id` (used everywhere else to reference
-  this person — by convention, their CMU/Andrew username), `name`, `image`, optional `website`,
+  this person — by convention, their CMU/Andrew username, e.g. `efeoflus`; the README's "use your
+  last name" advice is inherited from the upstream template and outdated), `name`, `image`, optional `website`,
   `status` (`faculty`, `current`, `visiting`, `alumni`, `master_alumni`, `ugrad_alumni`,
   `collab`, `past_collab`, `summer_alumni`, ...), `degree`, `affiliation` (a key into
   `_data/affiliations.yml`).
@@ -59,6 +60,11 @@ filters to `onhomepage: true`, sorts by `date`, and renders each as a badge usin
 (falling back to `thumbnail`) and `blurb` (falling back to `title`). A `date` in the future
 renders a "Coming Soon!" overlay instead of a link (see the `pub.date > site.time` /
 `pub.date < site.time` checks) — this is how not-yet-published papers/projects can be teased.
+This depends on `future: true` in `_config.yml`; without it Jekyll silently drops future-dated
+collection entries from the build.
+
+**PDFs**: papers are self-hosted in `pdfs/` and referenced from front matter as
+`pdf: '/pdfs/<File_Name>.pdf'` (not linked out to the publisher).
 
 **Images**: member photos go in `images/members/` (square, ideally 165×165px); publication
 images/thumbnails in `images/pubs/` (thumbnail: 16:9 @ ≥300px wide; hero image: 3:2 aspect);

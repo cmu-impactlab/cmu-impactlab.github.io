@@ -23,4 +23,7 @@ pubs:
   - Text2Map
   - Tesseract
   - graphwalker
+  - Thermal Navigability
+  - GraphWalker SIGSPATIAL
+  - Tesseract Demo
 ---

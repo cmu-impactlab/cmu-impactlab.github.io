@@ -14,6 +14,10 @@ avatar: https://avatars.githubusercontent.com/u/167036610?s=200&v=4
 
 future: true
 
+# Link used by the Join the Lab page (/join/).
+join:
+  expectations_url: "https://docs.google.com/document/d/1hKJyunpB8Jvdff4jPLDem9p1Cw2FTEXGrXTsosKVqCE/edit?usp=sharing"
+
 collections:
   publications:
     output: true

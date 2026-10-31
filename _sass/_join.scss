@@ -1,0 +1,35 @@
+//
+// Join the Lab page and homepage invitation
+//
+
+.join-invite {
+  margin: 20px 0 10px;
+  padding: 5px 20px;
+  border-left: 4px solid $blue;
+  background: $lightGray;
+
+  h2 {
+    margin-top: 10px;
+  }
+}
+
+.join-page {
+  max-width: 800px;
+
+  p {
+    line-height: 1.5;
+  }
+
+  .join-action {
+    margin: 20px 0;
+
+    .btn {
+      white-space: normal;
+    }
+  }
+
+  .join-note {
+    font-style: italic;
+    color: $gray;
+  }
+}

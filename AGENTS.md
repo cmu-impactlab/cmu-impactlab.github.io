@@ -60,7 +60,10 @@ filters to `onhomepage: true`, sorts by `date`, and renders each as a badge usin
 (falling back to `thumbnail`) and `blurb` (falling back to `title`). A `date` in the future
 renders a "Coming Soon!" overlay instead of a link (see the `pub.date > site.time` /
 `pub.date < site.time` checks) — this is how not-yet-published papers/projects can be teased.
-This depends on `future: true` in `_config.yml`; without it Jekyll silently drops future-dated
+Items dated within the last 90 days (and not in the future) automatically get a "new paper!" /
+"new project!" badge, computed at build time; front-matter `highlight_badge: '<text>'` overrides
+the text, `highlight_badge: false` suppresses it.
+The "Coming Soon" behaviour depends on `future: true` in `_config.yml`; without it Jekyll silently drops future-dated
 collection entries from the build.
 
 **PDFs**: papers are self-hosted in `pdfs/` and referenced from front matter as

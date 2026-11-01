@@ -11,7 +11,6 @@ authors:
 image: /images/projects/morshed.jpeg
 name: Morshed
 onhomepage: true
-highlight_badge: 'new project!'
 thumbnail: /images/projects/morshed_thumb.jpg
 title: 'Morshed: A Personalized and Multimodal Ubiquitous Indoor Navigation System (CMU-Q Accelerator Grant)'
 year: '2026'

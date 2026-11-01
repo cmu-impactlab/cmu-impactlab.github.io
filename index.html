@@ -60,14 +60,31 @@ technological advancements.</p>
 {% assign highlight_items = highlight_items | where: "onhomepage", true | sort: "date" %}
 <div class="highlights-grid">
 
+{% comment %}
+  "New" badge: items dated within the last 90 days (and not future-dated) get
+  "new paper!" / "new project!" automatically. Set highlight_badge in front
+  matter to override the text, or highlight_badge: false to suppress it.
+  Recomputed at build time, so a badge expires at the first rebuild after day 90.
+{% endcomment %}
+{% assign now_s = site.time | date: "%s" | plus: 0 %}
+{% assign new_cutoff_s = now_s | minus: 7776000 %}
 {% for pub in highlight_items reversed %}
 <!-- {{pub.name}} -->
+    {% assign pub_s = pub.date | date: "%s" | plus: 0 %}
+    {% assign badge = nil %}
+    {% if pub.highlight_badge == false %}
+      {% assign badge = nil %}
+    {% elsif pub.highlight_badge %}
+      {% assign badge = pub.highlight_badge %}
+    {% elsif pub_s >= new_cutoff_s and pub_s <= now_s %}
+      {% if pub.collection == "projects" %}{% assign badge = "new project!" %}{% else %}{% assign badge = "new paper!" %}{% endif %}
+    {% endif %}
     <div class="project-badge">
       <div class="image">
         {% assign highlight_image = pub.image | default: pub.thumbnail %}
         <img src="{{highlight_image}}"/>
-        {% if pub.highlight_badge %}
-        <div class="highlight_badge">{{ pub.highlight_badge }}</div>
+        {% if badge %}
+        <div class="highlight_badge">{{ badge }}</div>
         {% endif %}
         {% if pub.date > site.time %}
         <div class="coming_soon_overlay">

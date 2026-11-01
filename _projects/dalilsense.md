@@ -9,7 +9,6 @@ authors:
 image: /images/projects/dalilsense.jpeg
 name: DalilSENSE
 onhomepage: true
-highlight_badge: 'new project!'
 thumbnail: /images/projects/dalilsense_thumb.jpg
 title: 'DalilSENSE: Wearable AI for Real-Time Situational Awareness for Blind and Low Vision Individuals (QRDI - UREP)'
 year: '2026'

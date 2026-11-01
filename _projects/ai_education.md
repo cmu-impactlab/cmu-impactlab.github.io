@@ -16,7 +16,6 @@ authors:
 image: /images/projects/evolved.png
 name: EvolvED
 onhomepage: true
-highlight_badge: 'new project!'
 thumbnail: /images/projects/evolved_thumb.png
 title: 'Towards Adaptive and Self-Improving Educational Systems (CMUQ-SURA)'
 year: '2026'

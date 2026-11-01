@@ -116,3 +116,13 @@
   status: current
   degree: Undergraduate, CS '28
   affiliation: QSCS
+
+# Yousef
+- id: yousefh
+  name: Yousef Hussein
+  image: /images/members/yousefh.jpg
+  website: https://web2.qatar.cmu.edu/~yousefh/
+  email: yousefh@andrew.cmu.edu
+  status: current
+  degree: Undergraduate, CS '29
+  affiliation: QSCS

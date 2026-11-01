@@ -106,3 +106,13 @@
   status: current
   degree: Undergraduate
   affiliation: QSCS
+
+# Marco
+- id: mcasagra
+  name: Marco Savi Casagrande
+  image: /images/members/mcasagra.jpg
+  website: https://www.linkedin.com/in/mcasagra/
+  email: mcasagra@andrew.cmu.edu
+  status: current
+  degree: Undergraduate, CS '28
+  affiliation: QSCS

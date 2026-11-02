@@ -77,6 +77,8 @@ Rule: spaces → `_`, `: ` → `__`, keep hyphens and capitalization, drop other
 (`?`, `,`, `'`). Example:
 `MASP-UNet: Acquisition-Aware ...` → `MASP-UNet__Acquisition-Aware_..._in_Ultrasound.pdf`.
 If the file is untracked, a plain `mv` is fine; use `git mv` if it is already tracked.
+If the user already renamed it, still compare the name against the full title: user-chosen
+names are often truncated (e.g. a missing subtitle) and should be fixed.
 
 ## 5. Thumbnail: crop a representative figure
 
@@ -87,8 +89,10 @@ the architecture or pipeline diagram), not a page screenshot.
    ```bash
    for p in $(seq 1 N); do pdftotext -f $p -l $p pdfs/<f>.pdf - | grep -oE "(Fig\. [0-9]+\.|Figure [0-9]+:)[^.]*" | sed "s/^/p$p: /"; done
    ```
-   (IEEE uses "Fig. 1.", ACM uses "Figure 1:".) For demo papers, prefer the screenshot of
-   the system's interface over the pipeline diagram.
+   (IEEE uses "Fig. 1.", ACM uses "Figure 1:", CVF-style uses "Figure 1.".) For demo papers,
+   prefer the screenshot of the system's interface over the pipeline diagram. If Fig. 1 is
+   mostly a table or text (layer specs etc.), use the headline-result plot instead, e.g. an
+   accuracy-vs-parameters chart for an efficiency paper.
 2. Render that page twice: a small preview at 60 dpi for finding coordinates, and a 300 dpi
    copy for cropping (coordinates scale ×5):
    ```bash
@@ -104,7 +108,8 @@ the architecture or pipeline diagram), not a page screenshot.
      Lower the crop height until it's gone, and make sure nothing on the left or right
      edge got clipped.
    - For figures at the top of a page, the **running header** (title / "SIGSPATIAL '26, ...")
-     slips in at the top. Start the crop below it.
+     slips in at the top. Start the crop below it. Likewise, when figures are stacked, the
+     *previous* figure's caption slips in at the top.
    - A legend row half cut off at the bottom looks worse than none. Include it fully or
      cut above it.
 5. Finish (trim whitespace, add a white border, resize to 700px wide) and save into the repo:
@@ -135,6 +140,7 @@ Fields, in this order (copy an existing file for quoting style, single-quoted st
 - BibTeX key: `FirstAuthorSurnameYearShortName` (e.g. `Aryal2026MASPUNet`). Replace raw
   IEEE numeric keys; drop huge `keywords` fields.
 - `blurb`: one plain-language sentence for the homepage card. Don't start it with the title.
+  Take any numbers from the abstract's headline claims, not from figure annotations.
 - `onhomepage: true` for new papers unless the user says otherwise.
 - Titles containing `'` must be escaped as `''` inside single-quoted YAML.
 

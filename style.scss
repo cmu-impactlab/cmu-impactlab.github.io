@@ -26,6 +26,11 @@ body {
 
 .fix-nav {
   padding-top: 150px;
+  // Matches the taller two-line header used between 768px and 1199px (see .navbar-collapse),
+  // so content doesn't jump when the navbar switches to its fixed, compact state.
+  @media (min-width: 768px) and (max-width: 1199px){
+    padding-top: 220px;
+  }
 }
 
 
@@ -213,6 +218,11 @@ img {
   @media (min-width: 768px){
     height: 140px; 
   }
+  @media (min-width: 768px) and (max-width: 1199px){
+    body:not(.fix-nav) & {
+      height: auto;
+    }
+  }
   
   .navbar-header {
     min-height: 30px;
@@ -250,6 +260,20 @@ img {
             padding: 5px;
             color: black;
           }
+        }
+      }
+    }
+    // Below 1200px the container is too narrow for the ~400px logo and the menu side by side:
+    // the absolutely positioned menu slid under the logo (z-index 2), whose image then swallowed
+    // clicks on HOME/TEAM/PROJECTS. In the unscrolled state, put the menu on its own line instead.
+    @media (min-width: 768px) and (max-width: 1199px){
+      body:not(.fix-nav) & {
+        height: auto!important;
+        clear: both;
+        ul {
+          position: static;
+          float: right;
+          margin: 0 10px 10px;
         }
       }
     }

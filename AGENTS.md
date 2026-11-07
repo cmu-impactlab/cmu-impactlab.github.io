@@ -35,8 +35,8 @@ Three Jekyll collections plus one data file drive nearly all content:
   students, alumni, collaborators). Each entry has an `id` (used everywhere else to reference
   this person — by convention, their CMU/Andrew username, e.g. `efeoflus`; the README's "use your
   last name" advice is inherited from the upstream template and outdated), `name`, `image`, optional `website`,
-  `status` (`faculty`, `current`, `visiting`, `alumni`, `master_alumni`, `ugrad_alumni`,
-  `collab`, `past_collab`, `summer_alumni`, ...), `degree`, `affiliation` (a key into
+  `status` (only `faculty`, `current`, `collab` and `alumni` are rendered by
+  `members/index.html`; other values like `past_collab` hide the person), `degree`, `affiliation` (a key into
   `_data/affiliations.yml`).
 - **`_projects/*.md`** — one file per research project. Front matter only, no body content is
   rendered by `_layouts/project.html`. Key fields: `authors` (list — mix member `id`s and free-text
@@ -75,7 +75,8 @@ project images in `images/projects/`.
 
 ## Adding content (the common tasks)
 
-- **New lab member**: add an entry to `_data/members.yml`, upload photo to `images/members/`.
+- **New lab member**: see `.claude/skills/add-member/SKILL.md` (photo cropping/resizing,
+  `members.yml` entry, linking the person to projects and papers).
 - **New publication**: this is common enough to have a dedicated runbook — see
   `.claude/skills/add-publication/SKILL.md` for the full step-by-step (extracting metadata from
   the PDF, matching authors to `members.yml`, generating a representative thumbnail, writing the
@@ -86,9 +87,8 @@ project images in `images/projects/`.
   can semi-automate this from a BibTeX entry exported from ACM DL (fetches abstract/PDF/citation
   by scraping `dl.acm.org` — fragile, ACM-specific, effectively unmaintained tooling; treat it as
   a starting point, not something to build new features on).
-- **New project**: add a file to `_projects/`, following the pattern in an existing entry (e.g.
-  `_projects/ershad.md`). Reference lab-member authors by their `members.yml` id; reference
-  related papers by their publication `name` in the `pubs:` list.
+- **New project**: see `.claude/skills/add-project/SKILL.md` (title/funding format, team ids,
+  start/end dates, required image + thumbnail, linking papers via `pubs:`).
 
 ## Layouts/includes worth knowing about
 

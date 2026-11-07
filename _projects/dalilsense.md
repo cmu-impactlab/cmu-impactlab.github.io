@@ -5,6 +5,7 @@ DalilSENSE aims to develop a wearable AI-powered device that provides real-time 
 authors:
 - Eduardo Feo Flushing (LPI)
 - mcasagra
+- jhussien
 
 image: /images/projects/dalilsense.jpeg
 name: DalilSENSE

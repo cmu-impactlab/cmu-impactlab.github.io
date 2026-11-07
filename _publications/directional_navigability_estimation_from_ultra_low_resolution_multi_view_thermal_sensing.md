@@ -2,7 +2,7 @@
 title: 'Directional Navigability Estimation from Ultra-Low-Resolution Multi-View Thermal Sensing'
 authors:
 - Faiz Moazam
-- Jana Hussien
+- jhussien
 - ataweel
 - gramalho
 - yansari

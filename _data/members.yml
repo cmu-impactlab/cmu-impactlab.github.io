@@ -126,3 +126,23 @@
   status: current
   degree: Undergraduate, CS '29
   affiliation: QSCS
+
+# Jana
+- id: jhussien
+  name: Jana Hussien
+  image: /images/members/jhussien.jpg
+  website: https://www.linkedin.com/in/jana-hussien/
+  email: jhussien@andrew.cmu.edu
+  status: current
+  degree: Undergraduate, CS '28
+  affiliation: QSCS
+
+# Rawan
+- id: relghali
+  name: Rawan El Ghali
+  image: /images/members/dummy.png
+  website: https://www.linkedin.com/in/rawan-el-ghali-a5352a291
+  email: relghali@andrew.cmu.edu
+  status: current
+  degree: Undergraduate, CS '27
+  affiliation: QSCS

@@ -7,13 +7,12 @@ title:
 {% assign sorted_pubs = site.publications | sort: 'date' %}
 
 
-<p>
- {% for pub in sorted_pubs reversed %}
-
-
-
-<!-- <h2 id="{{ this_year }}-ref" style="padding-top: 15px"></h2> -->
-<!-- <hr/> -->
+{% for pub in sorted_pubs reversed %}
+{% assign this_year = pub.date | date: "%Y" %}
+{% if this_year != last_year %}
+<h2 class="pub-year" id="y{{ this_year }}">{{ this_year }}</h2>
+{% assign last_year = this_year %}
+{% endif %}
 
 
 <div class="row publication-badge">

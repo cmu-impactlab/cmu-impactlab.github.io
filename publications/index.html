@@ -38,6 +38,9 @@ title:
         {% if pub.pdf %}<a href="{{ site.url }}{{ pub.pdf }}" class="btn btn-default btn-xs" aria-label="Download PDF">
           <span class="glyphicon glyphicon-file" aria-hidden="true"></span> PDF
         </a>{% endif %}
+        {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" class="btn btn-default btn-xs" aria-label="Publisher page (DOI)" target="_blank">
+          <span class="glyphicon glyphicon-link" aria-hidden="true"></span> DOI
+        </a>{% endif %}
         {% if pub.video.size > 0 %}<a href="{{ pub.video }}" class="btn btn-default btn-xs" aria-label="Video" target="_blank">
           <span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Video
         </a> {% endif %}

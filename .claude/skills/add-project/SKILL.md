@@ -40,7 +40,7 @@ pubs:
 
 | Field | Rule |
 |---|---|
-| `title` | `'<Name>: <Subtitle> (<Funder> - <Program>)'`, e.g. `(QRDI - UREP)`, `(CMUQ-SURA)`, `(CMU-Q Accelerator Grant)`. Clean up pasted text: duplicated "Name: Name:", line breaks, typos. Escape `'` as `''` (e.g. `Qatar’s` is fine; `Qatar's` needs `''`). |
+| `title` | `'<Name>: <Subtitle> (<Funder> - <Program>)'`, e.g. `(QRDI - UREP)`, `(CMUQ-SURA)`, `(CMU-Q Accelerator Grant)`; unfunded work is `(Non-funded External Collaboration)`. Clean up pasted text: duplicated "Name: Name:", line breaks, typos. Escape `'` as `''` (e.g. `Qatar’s` is fine; `Qatar's` needs `''`). |
 | `authors` | First entry is always the plain string `Eduardo Feo Flushing (LPI)`. Then lab members by **`members.yml` id** (map first names: "Mai" → `mai`, "Yaqoob" → `yansari`, "Khaled Harras" → `kharras`, "marco" → `mcasagra`). If a person isn't in `members.yml` yet, add them first (**REQUIRED SUB-SKILL:** add-member) or use a plain name and tell the user. |
 | `date` / `year` | Project **start** date (`YYYY-MM-DD`; "July 2026" → `2026-07-01`). It drives sort order and the "new" badge. A future start date shows "Coming Soon!" and makes the card unclickable. |
 | `end_date` | Store it if given. **Nothing renders it yet**; tell the user so. |

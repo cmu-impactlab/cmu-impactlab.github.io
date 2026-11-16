@@ -128,7 +128,16 @@ Slug = full title lowercased, non-alphanumerics → `_`, collapsed (e.g.
 Fields, in this order (copy an existing file for quoting style, single-quoted strings):
 
 `title`, `authors`, `conference`, `date`, `year`, `name`, `pdf` (`/pdfs/<renamed>.pdf`),
-`thumbnail`, `image`, `abstract`, `citation`, `bibtex: |`, `blurb`, `onhomepage`.
+`doi`, `thumbnail`, `image`, `abstract`, `citation`, `bibtex: |`, `blurb`, `onhomepage`.
+
+- `doi`: bare DOI, no `https://doi.org/` prefix (`doi: '10.1007/s10846-026-02477-8'`). It
+  renders a **DOI** button linking to the publisher page. **Check it before adding it:**
+  `curl -s https://api.crossref.org/works/<doi> | python3 -c "import json,sys; print(json.load(sys.stdin)['message']['title'][0])"`
+  must print this paper's title. BibTeX copied from elsewhere has carried another paper's
+  DOI before. DOIs printed in camera-ready ACM papers are often not registered until the
+  proceedings come out: write the line commented out (`# doi: '...'  # not registered yet`)
+  and tell the user. Omit `doi` for placeholders or papers without one. Journal articles
+  "in press": Crossref's `published-online` date is the `date:` to use.
 
 - `name`: short display name, unique across all publications. It's how projects reference
   the paper. The method name (`MASP-UNet`) works well; otherwise a 2–3 word topic. First
@@ -181,6 +190,6 @@ http://127.0.0.1:4000/.
 
 ## 9. Report
 
-Tell the user: the renamed PDF paths, the entry files, which figure became the thumbnail,
+Tell the user: the renamed PDF paths, the entry files, the DOI (or why there is none), which figure became the thumbnail,
 the date used and where it came from (with source link), any project links, and anything
 assumed (e.g. a name spelled per byline). Do not commit unless asked.

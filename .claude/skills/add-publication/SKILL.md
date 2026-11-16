@@ -173,7 +173,10 @@ Append the paper's `name` to the project's `pubs:` list. `_layouts/project.html`
 pubs:
   - MASP-UNet
 ```
-If no project fits, skip this step and say so to the user.
+If no project fits, skip this step and say so to the user. A paper only belongs to a project
+the paper itself came out of, not one on a related topic: multi-robot task-allocation papers
+(CoLoSSI etc.) do **not** belong to `optimizing_task_scheduling_sporadic_comm.md`, a past
+student project. When unsure, ask instead of linking.
 
 ## 8. Verify the build
 

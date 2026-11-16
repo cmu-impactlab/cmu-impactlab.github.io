@@ -47,6 +47,7 @@
 - id: yansari
   name: Yaqoob Ansari
   image: /images/members/yansari.jpeg
+  website: https://scholar.google.com/citations?user=5Kk_LqgAAAAJ&hl=en
   email: yansari@andrew.cmu.edu
   status: current
   degree: Research Associate
@@ -56,6 +57,7 @@
 - id: ma1
   name: Mohammed Yusuf Ansari
   image: /images/members/ma1.png
+  website: https://scholar.google.com/citations?user=F7gSot8AAAAJ&hl=en
   email: ma1@alumni.cmu.edu
   status: current
   degree: Postdoctoral Fellow, Computer Science
@@ -146,3 +148,11 @@
   status: current
   degree: Undergraduate, CS '27
   affiliation: QSCS
+
+# Alejandro
+- id: asanchez
+  name: Alejandro Sánchez
+  image: /images/members/asanchez.jpg
+  website: https://www.linkedin.com/in/alesanchezr
+  status: collab
+  degree: Co-Founder, 4Geeks Academy | CEO, LearnPack

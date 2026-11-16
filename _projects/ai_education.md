@@ -6,18 +6,19 @@ The goal of this project is to investigate how educational content generation ag
 
 The expected outcome is a framework for self-improving educational AI systems that can generate higher-quality learning materials with minimal human intervention. By making high-quality course creation more scalable and accessible, this research has the potential to expand access to education across a wide range of subjects and learners.
 
-This project is in collaboration with LearnPack (https://learnpack.co/)
+This project is a collaboration with <a href="https://learnpack.co/" target="_blank">LearnPack.co</a> (US).
 '
 authors:
 - Eduardo Feo Flushing (LPI)
 - yaljamal
 - saoude
+- asanchez
 
 image: /images/projects/evolved.png
 name: EvolvED
 onhomepage: true
 thumbnail: /images/projects/evolved_thumb.png
-title: 'Towards Adaptive and Self-Improving Educational Systems (CMUQ-SURA)'
+title: 'Towards Adaptive and Self-Improving Educational Systems (Non-funded External Collaboration)'
 year: '2026'
 date: '2026-05-12'
 status: current

@@ -10,6 +10,7 @@ date: '2021-10-01'
 year: '2021'
 name: '3DRSSNet'
 pdf: '/pdfs/Prediction_of_Indoor_Wireless_Coverage_From_3D_Floor_Plans_Using_Deep_Convolutional_Neural_Networks.pdf'
+doi: '10.1109/LCN52139.2021.9525019'
 thumbnail: '/images/pubs/3dplan.png'
 image: '/images/pubs/3dplan.png'
 abstract: 'We present 3DRSSNet, a deep convolutional model that predicts indoor wireless signal strength from 3D floor-plan representations and generalizes to unseen environments.'
@@ -21,7 +22,7 @@ bibtex: |
     booktitle={IEEE 46th Conference on Local Computer Networks (LCN)},
     pages={155--162},
     year={2021},
-    doi={10.1109/LCN52139.2021.9524950}
+    doi={10.1109/LCN52139.2021.9525019}
   }
 blurb: 'Predicting indoor wireless coverage directly from 3D floor plans.'
 onhomepage: false

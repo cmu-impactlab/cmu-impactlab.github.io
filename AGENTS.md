@@ -43,7 +43,8 @@ Three Jekyll collections plus one data file drive nearly all content:
   names, see below), `pubs` (list of publication `name`s to cross-link), `onhomepage`,
   `thumbnail`/`image`, `status` (`current`, etc.), `date`.
 - **`_publications/*.md`** — one file per paper. Front matter drives `_layouts/publication.html`.
-  Key fields: `authors`, `conference`, `date`, `pdf`, `thumbnail`/`image`, `abstract`, `citation`,
+  Key fields: `authors`, `conference`, `date`, `pdf`, `doi` (bare DOI; renders a DOI button to
+  the publisher page), `thumbnail`/`image`, `abstract`, `citation`,
   `bibtex` (literal block), `blurb` (one-line homepage summary), `onhomepage`, `name` (short
   slug/name used by `_projects/*.md` `pubs:` lists to cross-reference this paper).
 - **`_posts/`** — standard Jekyll blog posts (barely used — one placeholder post).
@@ -89,6 +90,8 @@ project images in `images/projects/`.
   a starting point, not something to build new features on).
 - **New project**: see `.claude/skills/add-project/SKILL.md` (title/funding format, team ids,
   start/end dates, required image + thumbnail, linking papers via `pubs:`).
+- **Ideas not done yet**: `FUTURE_IMPROVEMENTS.md`. Add deferred ideas there, and remove an
+  item once it's implemented.
 
 ## Layouts/includes worth knowing about
 

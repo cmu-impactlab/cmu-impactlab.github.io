@@ -14,6 +14,4 @@ year: '2024'
 date: '2024-06-01'
 status: past
 pubs:
-  - CoLoSSI
-  - Spatially-Distributed Missions
 ---

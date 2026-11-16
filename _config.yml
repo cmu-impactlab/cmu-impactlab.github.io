@@ -107,3 +107,6 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - AGENTS.md
+  - CLAUDE.md
+  - FUTURE_IMPROVEMENTS.md

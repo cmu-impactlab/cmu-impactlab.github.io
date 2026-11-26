@@ -23,7 +23,7 @@
   description: >
     Help build an early prototype of an AI-enabled education tool for settings with limited
     infrastructure. This is a hands-on R&D project: the priority is a working prototype rather
-    than a research paper, and it may involve collaboration with Education Above All. You will
+    than a research paper. You will
     assemble and configure a compact computing device, set up its Linux environment, and deploy
     small language models for local use. You will also help test the prototype's reliability and
     document how to reproduce the setup.
@@ -39,7 +39,7 @@
   description: >
     Help build an early prototype of an AI-enabled education tool for settings with limited
     infrastructure. This is a hands-on R&D project: the priority is a working prototype rather
-    than a research paper, and it may involve collaboration with Education Above All. You will
+    than a research paper. You will
     develop a prototype that generates and presents educational content: designing agent
     workflows, connecting tools and content sources, and evaluating the quality of generated
     courses.

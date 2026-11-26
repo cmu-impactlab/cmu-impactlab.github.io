@@ -1,0 +1,18 @@
+# Open positions, shown on /join/ ("Open Positions") and teased on the homepage.
+# A position is shown through the end of its `deadline` day (Qatar time) and then disappears
+# on its own: expired entries are dropped at build time and hidden in the browser, so no push is
+# needed on the day. Delete old entries whenever convenient. See .claude/skills/add-position/.
+#
+# - id: dalilsense-sensing-s27             # unique, lowercase-hyphenated (used as page anchor)
+#   title: 'Wearable Sensing Prototype for DalilSENSE'
+#   project: dalilsense                   # optional: _projects/<file name without .md>
+#   type: 'Paid research assistant'       # e.g. Independent study, Volunteer, Paid, SURA/QSIURP
+#   start: 'Spring 2027'
+#   deadline: 2027-01-15                  # YYYY-MM-DD, last day to apply
+#   description: >
+#     What the student will work on, in 2-4 sentences.
+#   requirements: >
+#     Who we're looking for (courses, skills, availability).
+#   apply_url: ''                         # optional; defaults to the Read First doc
+
+[]

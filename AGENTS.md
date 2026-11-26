@@ -90,6 +90,9 @@ project images in `images/projects/`.
   a starting point, not something to build new features on).
 - **New project**: see `.claude/skills/add-project/SKILL.md` (title/funding format, team ids,
   start/end dates, required image + thumbnail, linking papers via `pubs:`).
+- **Open position**: entries in `_data/positions.yml`, rendered by `_includes/open_positions.html`
+  on `/join/` and the homepage; they expire on their own after `deadline`. See
+  `.claude/skills/add-position/SKILL.md`.
 - **Ideas not done yet**: `FUTURE_IMPROVEMENTS.md`. Add deferred ideas there, and remove an
   item once it's implemented.
 

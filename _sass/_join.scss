@@ -16,6 +16,34 @@
     font-size: 14px;
     color: $gray;
   }
+
+  .positions-teaser .position-item {
+    display: block;
+    margin-left: 15px;
+  }
+}
+
+.position-deadline {
+  color: $gray;
+}
+
+.open-positions {
+  .position {
+    margin: 15px 0 25px;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-left: 4px solid $blue;
+  }
+
+  h3 {
+    margin-top: 5px;
+    font-weight: 600;
+  }
+
+  .position-meta span + span:before {
+    content: " · ";
+    color: $gray;
+  }
 }
 
 .join-page {

@@ -1,0 +1,65 @@
+{% comment %}
+  Open positions from _data/positions.yml. A position is listed through the end of its deadline
+  day (Qatar time, UTC+3). Expired ones are skipped at build time, and the script at the bottom
+  hides any that expire between builds (GitHub Pages only rebuilds on push).
+  Usage: {% include open_positions.html mode="full" %} (join page) or mode="teaser" (homepage).
+{% endcomment %}
+{% assign today_s = site.time | date: "%Y-%m-%d" %}
+{% assign open_positions = "" | split: "" %}
+{% for pos in site.data.positions %}
+  {% assign deadline_s = pos.deadline | date: "%Y-%m-%d" %}
+  {% if deadline_s >= today_s %}{% assign open_positions = open_positions | push: pos %}{% endif %}
+{% endfor %}
+
+{% if open_positions.size > 0 %}
+{% if include.mode == "teaser" %}
+<p class="positions-teaser" data-positions-block>
+  <strong>We're currently looking for:</strong>
+  {% for pos in open_positions %}
+  <span class="position-item" data-deadline="{{ pos.deadline | date: '%Y-%m-%d' }}"><a href="{{ site.baseurl }}/join/#{{ pos.id }}">{{ pos.title }}</a> <span class="position-deadline">(apply by {{ pos.deadline | date: "%b %-d" }})</span></span>
+  {% endfor %}
+</p>
+{% else %}
+<div class="open-positions" data-positions-block>
+<h2 id="open-positions">Open Positions</h2>
+{% for pos in open_positions %}
+  {% assign proj = nil %}
+  {% if pos.project %}{% assign proj = site.projects | where: "slug", pos.project | first %}{% endif %}
+  <div class="position position-item" id="{{ pos.id }}" data-deadline="{{ pos.deadline | date: '%Y-%m-%d' }}">
+    <h3>{{ pos.title }}</h3>
+    <p class="position-meta">
+      {% if pos.type %}<span>{{ pos.type }}</span>{% endif %}
+      {% if pos.start %}<span>Starts {{ pos.start }}</span>{% endif %}
+      {% if proj %}<span>Project: <a href="{{ proj.url | prepend: site.baseurl }}">{{ proj.name }}</a></span>{% endif %}
+      <span class="position-deadline">Apply by {{ pos.deadline | date: "%B %-d, %Y" }}</span>
+    </p>
+    {% if pos.description %}<p>{{ pos.description }}</p>{% endif %}
+    {% if pos.requirements %}<p><strong>Who we're looking for:</strong> {{ pos.requirements }}</p>{% endif %}
+    <p>
+      {% if pos.apply_url and pos.apply_url != "" %}
+      <a class="btn btn-primary btn-sm" href="{{ pos.apply_url }}" target="_blank">How to apply</a>
+      {% else %}
+      To apply, start with the <a href="{{ site.join.expectations_url }}" target="_blank">Read First</a> document
+      below and mention this position in your application.
+      {% endif %}
+    </p>
+  </div>
+{% endfor %}
+</div>
+{% endif %}
+<script>
+(function () {
+  // Hide positions whose deadline (end of day, Qatar time) has passed since the last build.
+  var now = new Date();
+  document.querySelectorAll('[data-positions-block]').forEach(function (block) {
+    var items = block.querySelectorAll('.position-item');
+    var visible = 0;
+    items.forEach(function (el) {
+      var end = new Date(el.getAttribute('data-deadline') + 'T23:59:59+03:00');
+      if (end < now) { el.style.display = 'none'; } else { visible++; }
+    });
+    if (visible === 0) { block.style.display = 'none'; }
+  });
+})();
+</script>
+{% endif %}

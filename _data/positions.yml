@@ -15,4 +15,35 @@
 #     Who we're looking for (courses, skills, availability).
 #   apply_url: ''                         # optional; defaults to the Read First doc
 
-[]
+- id: ai-edu-embedded-s27
+  title: 'AI Education Prototype: Embedded Systems and Local AI'
+  type: 'Paid, ~10 hours/week for 12 weeks'
+  start: 'Spring 2027'
+  deadline: 2027-01-10
+  description: >
+    Help build an early prototype of an AI-enabled education tool for settings with limited
+    infrastructure. This is a hands-on R&D project: the priority is a working prototype rather
+    than a research paper, and it may involve collaboration with Education Above All. You will
+    assemble and configure a compact computing device, set up its Linux environment, and deploy
+    small language models for local use. You will also help test the prototype's reliability and
+    document how to reproduce the setup.
+  requirements: >
+    Useful experience: Raspberry Pi, Jetson Nano, or similar devices; Linux and shell scripting;
+    hardware integration; and running or optimizing small language models on constrained hardware.
+
+- id: ai-edu-course-gen-s27
+  title: 'AI Education Prototype: AI Course Generation'
+  type: 'Paid, ~10 hours/week for 12 weeks'
+  start: 'Spring 2027'
+  deadline: 2027-01-10
+  description: >
+    Help build an early prototype of an AI-enabled education tool for settings with limited
+    infrastructure. This is a hands-on R&D project: the priority is a working prototype rather
+    than a research paper, and it may involve collaboration with Education Above All. You will
+    develop a prototype that generates and presents educational content: designing agent
+    workflows, connecting tools and content sources, and evaluating the quality of generated
+    courses.
+  requirements: >
+    Useful experience: AI agent harnesses, reusable agent skills, MCP, tool calling, structured
+    outputs, retrieval-augmented generation, prompt design, and evaluation of AI-generated content.
+    Experience with Markdown or browser-based learning content is a plus.
